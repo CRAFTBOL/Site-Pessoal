@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PORTAL TH</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Site pessoal para projetos e contato.">
+        <meta name="keywords" content="site pessoal, blogs, projetos HTML">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Matheus De Assis Portal">
+        <link rel="stylesheet" href="Visual/Global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?/family=Prompt:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" 
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    </head>
+<body>
+    <header class="menu-site container bg-preto">
+        <a href="index.html"><h1 class="menu-logo">PORTAL TH</h1></a>
+        <button class="bott-menu"> <i class="fa fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <a class="bott-fechar"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curriculo.html">Curriculo</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="novidade.html">Novidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="projetos.html">Projetos</a></li>        
+            </ul>
+        </nav>
+    </header>
+    <div class="banner container conteudo">
+        <div class="titulo">
+            <h1>ENTRE EM CONTATO!</h1>
+            <h2>Saiba como entrar em contato comigo!</h2>
+        </div>
+    </div>
+    <div class="container conteudo">
+        <div class="s-mim bg-branco">
+            <div class="txt-sobre">
+                <h2>CONTATO</h2>
+                <address>
+                    <p>
+                    <b>Telefone:</b><a class="link" href="tel:+5521992406461" target=" blank"> (21) 99240-6461</a>
+                    <br>
+                    <b>E-mail:</b><a class="link" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=CllgCKCDkpKxLcQThVpdHccsbRxttdZFbsBgVDwQBSbfhLccTgcXjpqftcRgXZwCPQdVvXFrkFL" target=" blank"> matheusgamer714@gmail.com</a>
+                    <br>
+                    <b>Linkedin:</b><a class="link" href="https://www.linkedin.com/in/matheus-de-assis/" target=" blank"> Clique aqui.</a>
+                    <br>
+                    <b>Face:</b><a class="link" href="https://www.facebook.com/matheusassip" target=" blank"> Clique aqui.</a>
+                    </p>
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="container conteudo">
+        <section class="formcss">
+            <form name="FormularioContato" method="post" data-netlify="True">
+                <div class="titulocs">
+                    <h2>ENTRE EM CONTATO</h2>
+                </div>
+                <div>
+                    <label for="NomeContato"></label>
+                    <input type="text" name="NomeContato" id="NomeContato" placeholder="Seu Nome" required/>
+                </div>
+                <div>
+                    <label for="EmailContato"></label>
+                    <input type="email" name="EmailContato" id="EmailContato" placeholder="Seu email" required/>
+                </div>
+                <div>
+                    <label for="SelecaoContato"></label>
+                    <select name="SelecaoContato" id="SelecaoContato">
+                        <option value="Aluno">Aluno</option>
+                        <option value="Professor">Professor</option>
+                        <option value="Visitante">Visitante</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="AssuntoContato"></label>
+                    <textarea name="AssuntoContato" id="AssuntoContato" placeholder="Assunto" rows="10" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" />
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer class="rodape container">
+        <div class="icons-social">
+            <a href="https://www.facebook.com/matheusassip" target=" blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/assisp_th/" target=" blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/matheus-de-assis/" target=" blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">Copyright © PORTAL TH 2022. Todos os reservados</p>
+    </footer>
+    <!--SCRIPT MENU RESPONSIVO-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script>
+        $(".bott-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".bott-fechar").click(function(){
+            $(".menu").hide();
+        });
+    </script>
+</body>
+</html>

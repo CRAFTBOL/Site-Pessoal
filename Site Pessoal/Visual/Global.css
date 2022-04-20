@@ -1,0 +1,142 @@
+/*================= RESET =================*/
+* { top: 0; background-position: center center; margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;}
+body {background-color: rgb(20, 20, 20); display: flex; flex-direction: column; margin: 0; padding: 0;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+/* global */
+html, body {height: 100%; margin: 0px; padding: 0px;}
+.container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
+.bg-preto {background-color: black;}
+.bg-branco {background-color: #fff}
+
+/* MENU-SITE */
+.menu-site {padding: 0.4%; position: fixed; top: 0; left: 0; background-repeat: no-repeat; background-size: cover;
+    background-position: top center;}
+.menu-logo {width: 110px; height: 80px; float: left; background: url(../imagens/th.png) center center/80px no-repeat;
+    font-size: 0;}
+.bott-menu {width: 56px; height: 56px; float: right; text-align: center; color: rgb(255, 255, 255); border-radius: 56px; cursor: pointer;
+background: linear-gradient(to right, #303030, #4d4d4d);}
+/* MENU */
+.menu {display: none; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); top: 0; left: 0;}
+.bott-fechar {font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 2% 3% 0 0}
+.menu ul {width: 100%; float: left; text-align: center;}
+.menu li {padding: 1.5%;}
+.menu li a {font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover {border: 1px solid #ffffff;}
+/* banner */
+.banner {background: url(../imagens/fundo.png) no-repeat fixed; background-repeat: no-repeat; background-size: cover; background-position: right center; margin-top: 80px;}
+.titulo {width: 100%;}
+.titulo h1 {font-size: 2.5em; color: #fff; font-weight: 700;}
+.titulo h2 {font-size: 1.5em; color: #fff;}
+.tit h2 {font-size: 1em; font-weight: 700; margin-bottom: 7%;}
+.tit h3 {font-size: 1em; font-weight: 700;}
+
+/* Resumo */
+.s-mim {width: 100%; text-align: left; border-radius: 4px; margin-bottom: 3%;}
+.s-mim img {border-radius: 4px 4px 0 0;}
+.s-mim h2 {font-size: 1.2em; color: black; font-weight: 700; margin-top: 2%;}
+.txt-sobre {padding: 7%;}
+.txt-sobr {padding: 7%;}
+.txt-sobre h4 {font-size: 1.2em; color: black; font-weight: 700; margin-top: 2%;}
+.txt-sobre p {margin-top: 6%; color: black; line-height: 1.5em;}
+.txt-sobr p {margin-bottom: 4%; color: black; line-height: 1.5em;}
+.txt-sobr ul {margin-bottom: 10%; color: black; line-height: 1.5em;}
+
+/* area curriculo */
+.curritxt {width: 22%; margin-left: 40%; padding: 3% 1%; text-align: left; flex: 1 0 auto; margin-top: 115px;}
+.txtcurr {padding: 4%;}
+.txtcurr h2 {font-size: 2em; color: black; font-weight: 600; margin-top: 1;}
+.txtcurr h3 {font-size: 1em; color: black; font-weight: 600; margin-top: 2%;}
+.txtcurr p {margin-top: 2%; color: black; line-height: 1em;}
+
+/* formulario contato */
+.titulocs h2 {text-align: center; color: #fff; font-family: Arial, Helvetica, sans-serif; font-weight: 600;}
+.formcss {outline: unset; display: flex; align-items: center; justify-content: center;}
+.formcss {display: flex; background-color: #4d4d4d; padding: 30px; 
+    border-radius: 10px; width: 100%; max-width: 320px;}
+form {font-family: Arial, Helvetica, sans-serif;}
+form div {display: flex; flex-direction: column; margin-bottom: 30px;}
+form input, form textarea {outline: unset; padding: 20px; min-width: 300px; max-width: 300px; max-height: 200px; border: 1px solid #000000; border-radius: 4px;}
+form textarea {min-height: 200px;}
+form input:focus, form textarea:focus {background-color: #b4b4b4;}
+form input[type=submit] {background-color: #000000; color: #fff; cursor: pointer;}
+form label {margin-left: 10px;}
+
+
+
+/* Newsletter */
+.newsletter h2 {font-size: 1.5em; color: #fff; font-weight: 700;}
+.newsletter h3 {color: #fff;}
+.newsletter form {margin-top: 2%;}
+.newsletter input {width: 100%; color: #fff; border: 1px solid rgb(255, 255, 255, 0.3); padding: 5%; border-radius: 3px;}
+.newsletter button {width: 100%; color: black; padding: 5%; border-radius: 3px; cursor: pointer; margin-top: 2%;}
+
+
+/* rodape */
+.rodape {background: linear-gradient(to right, #D2691E, #1C1C1C); left: 0; right: 0; bottom: 0; padding: 5px;}
+.icons-social a {font-size: 1.5em; color: rgb(255, 255, 255, 0.7); margin-right: 3%;}
+.icons-social a:last-child {margin-right: 0;}
+.icons-social a:hover {color: rgb(255, 255, 255);}
+.copyright {margin-top: 2%; color: rgb(255, 255, 255, 0.7);}
+
+
+@media screen and (min-width: 320px) {
+    .bott-menu {width: 36px; height: 36px; margin-top: 5%; margin-right: 2%;}
+    .menu-logo {width: 190px; float: left; background: url(../imagens/th.png) center center/190px no-repeat;}
+    .b-contato {font-size: 2em;}
+    .s-mim {width: 100%; float: left; margin-right: 2%;}
+}
+/* mobile smartphones */
+@media screen and (min-width: 480px) {
+    .bott-menu {width: 56px; height: 56px; margin-top: 0%; margin-right: 0%;}
+    .menu-logo {width: 210px ; margin-left: 25%; float: left; background: url(../imagens/th.png) center center/210px no-repeat;}
+    .b-contato {font-size: 2em;}
+    .s-mim {width: 68%; float: left; margin-right: 2%;}
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+    .bott-menu {width: 56px; height: 56px; margin-top: 0%; margin-right: 0%;}
+    .menu-logo {width: 210px ; margin-left: 41%; float: left; background: url(../imagens/th.png) center center/210px no-repeat;}
+    .s-mim {width: 54.4%; float: left; margin-right: 2%;}
+    .s-mim:nth-child(2) {margin-right: 0;}
+    .newsletter h1 {font-size: 2em;}
+    .newsletter h3 {font-size: 1.5em;}
+    .newsletter input {width: 70%; padding: 2%; float: left; margin-right: 1%;}
+    .newsletter button {width: 29%; padding: 2%; float: right; margin-top: 0;}
+}
+
+/* medium & desktops */
+@media screen and (min-width: 960px) {
+    .menu-logo {width: 210px ; margin-left: 42%; float: left; background: url(../imagens/th.png) center center/210px no-repeat;}
+    .titulo {width: 70%; float: left; text-align: left;}
+    .titulo h1 {font-size: 2em;}
+    .titulo h2 {font-size: 1.5em;}
+    .s-mim {width: 35%;}
+    .s-mim:nth-child(2) {margin-right: 2%;}
+    .s-mim:nth-child(3) {margin-right: 0;}
+    .newsletter input {width: 60%; padding: 1%; float: left; margin-right: 1%;}
+    .newsletter button {width: 20%; padding: 1%; float: right; margin-top: 0;}
+}
+
+/* large & wide screens */
+@media screen and (min-width: 1480px) {
+    .menu-logo {width: 210px; margin-left: 45%; float: left; background: url(../imagens/th.png) center center/210px no-repeat;}
+    .bott-menu {display: none;}
+    .bott-fechar {display: none;}
+    .menu {width: auto; height: 56px; line-height: 56px; float: right; background-color: transparent; display: block !important; position: static;}
+    .menu li {padding: 0; float: left;}
+    .menu li a {color: #505050; font-size: 1em; padding: 15px;}
+    .menu li a:hover {border: none; color: #ffffff;}
+    .s-mim {width: 20%;}
+    .s-mim:nth-child(2) {margin-right: 2%;}
+    .s-mim:nth-child(3) {margin-right: 0;}
+    .titulo h1 {font-size: 3em;}
+    .titulo h2 {font-size: 2em;}
+    .icons-social a {font-size: 1em; margin-right: 2%}
+    .copyright {margin-top: 0.5%;}
+    .newsletter input {width: 15%; padding: 1%; float: none; margin-right: 1%;}
+    .newsletter button {width: 9%; padding: 1%; float: none; margin-top: 0;}
+}

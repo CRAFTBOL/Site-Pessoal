@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PORTAL TH</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Site pessoal para projetos e contato.">
+        <meta name="keywords" content="site pessoal, blogs, projetos HTML">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Matheus De Assis Portal">
+        <link rel="stylesheet" href="Visual/Global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?/family=Prompt:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" 
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    </head>
+<body>
+    <header class="menu-site container bg-preto">
+        <a href="index.html"><h1 class="menu-logo">PORTAL TH</h1></a>
+        <button class="bott-menu"> <i class="fa fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <a class="bott-fechar"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curriculo.html">Curriculo</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="novidade.html">Novidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="projetos.html">Projetos</a></li>        
+            </ul>
+        </nav>
+    </header>
+    <div class="banner container">
+        <div class="titulo">
+            <h1>O QUE VEM POR AI?</h1>
+            <h2>Saiba sobre atualizações e projetos a serem criados!</h2>
+        </div>
+    </div>
+    <div class="container">
+        <article class="s-mim bg-branco">
+            <div class="txt-sobre">
+                <h2>CRIAÇÃO DE UM RPG</h2>
+                <p>Estou com um projeto de criação de um BOT de RPG no discord.
+                    Para a galerinha que curte ficar em uma call se divertindo
+                    conversando e jogando. Esse RPG será bem complexo precisando
+                    de um bom tempo de desenvolvimento com sistemas de carta, vida,
+                    poção, criticos, defesa, contra golpe etc... E com uma facilidade
+                    de jogo. A ideia é que seja uma partida rapida multiplayer com status
+                    de todos os jogadores aparecendo em um final de cada round.
+                </p>
+            </div>
+        </article>
+    </div>
+    <br>
+    <footer class="rodape container">
+        <div class="icons-social">
+            <a href="https://www.facebook.com/matheusassip" target=" blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/assisp_th/" target=" blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/matheus-de-assis/" target=" blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">Copyright © PORTAL TH 2022. Todos os reservados</p>
+    </footer>
+    <!--SCRIPT MENU RESPONSIVO-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script>
+        $(".bott-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".bott-fechar").click(function(){
+            $(".menu").hide();
+        });
+    </script>
+</body>
+</html>
